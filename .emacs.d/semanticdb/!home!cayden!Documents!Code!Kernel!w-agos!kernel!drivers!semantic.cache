@@ -1,0 +1,121 @@
+;; Object semanticdb-project-database-file-1574484e2aa4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1574484e2aa4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1574484e2ab0"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [1 20])
+            ("drivers/keyboard.h" include nil nil [21 50])
+            ("kb_mode" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [53 81])
+            ("kb_map" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    0,
+    0x1b, /* esc */
+    '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
+    '-', '=', '\\b', '\\t', 'q', 'w', 'e', 'r',
+    't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\\n',
+    0, /* left ctrl */
+    'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\\'', '`',
+    0, /* left shift */
+    '\\\\', 'z', 'x', 'c', 'v', 'b', 'n',
+    'm', ',', '.', '/',
+    0, /* right shift */
+    '*',
+    0,                            /* alt */
+    ' ',                          /* space*/
+    0,                            /* capslock */
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* f1 ... f10 */
+    0,                            /* num lock*/
+    0,                            /* scroll Lock */
+    0,                            /* home key */
+    0,                            /* up arrow */
+    0,                            /* page up */
+    '-',
+    0, /* left arrow */
+    0,
+    0, /* right arrow */
+    '+',
+    0, /* end key*/
+    0, /* down arrow */
+    0, /* page down */
+    0, /* insert key */
+    0, /* delete key */
+    0, 0, 0,
+    0, /* f11 key */
+    0, /* f12 key */
+    0, /* all other keys are undefined */
+}"
+                :type "char")
+                nil [83 1221])
+            ("kb_shift_map" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    0,
+    0x1b, /* esc */
+    '!', '@', '#', '$', '%', '^', '&', '*', '(', ')',
+    '_', '+', '\\b', '\\t', 'Q', 'W', 'E', 'R',
+    'T', 'Y', 'U', 'I', 'O', 'P', '{', '}', '\\n',
+    0, /* left control */
+    'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':', '\\\"', '~',
+    0, /* left shift */
+    '|', 'Z', 'X', 'C', 'V', 'B', 'N',
+    'M', '<', '>', '?',
+    0, /* right shift */
+    '*',
+    0,                            /* alt */
+    ' ',                          /* space bar */
+    0,                            /* caps lock */
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* f1 ... f10 */
+    0,                            /* num lock*/
+    0,                            /* scroll lock */
+    0,                            /* home key */
+    0,                            /* up arrow */
+    0,                            /* page up */
+    '-',
+    0, /* left arrow */
+    0,
+    0, /* right arrow */
+    '+',
+    0, /* end key*/
+    0, /* down arrow */
+    0, /* page down */
+    0, /* insert key */
+    0, /* delete key */
+    0, 0, 0,
+    0, /* f11 key */
+    0, /* f12 key */
+    0, /* all other keys are undefined */
+}"
+                :type "char")
+                nil [1223 2375])
+            ("shift" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sc" variable (:type "char") (reparse-symbol arg-sub-list) [2395 2403]))                  
+                :type "char")
+                nil [2377 2835])
+            ("kb_handler" function
+               (:arguments 
+                  ( ("toreturn" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2853 2868]))                  
+                :type "void")
+                nil [2837 4311]))          
+      :file "keyboard.c"
+      :pointmax 4312
+      :fsize 4311
+      :lastmodtime '(24490 50657 932836 401000)
+      :unmatched-syntax nil))
+  :file "!home!cayden!Documents!Code!Kernel!w-agos!kernel!drivers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

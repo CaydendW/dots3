@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file-156d238834ec
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-156d238834ec"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-156d23a04678"
+      :major-mode python-mode
+      :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("cv2" include nil nil [20 30])
+            ("sys" include nil nil [31 41])
+            ("PIL" include nil nil [42 63])
+            ("os" include nil nil [64 73])
+            ("functools" include nil nil [74 90])
+            ("functools" code nil nil [100 136])
+            ("print" code nil nil [138 170])
+            ("print" code nil nil [171 197])
+            ("print" code nil nil [198 271])
+            ("print" code nil nil [272 316])
+            ("print" code nil nil [317 405])
+            ("try" code nil nil [407 539])
+            ("theme" variable nil nil [540 649])
+            ("pos" variable nil nil [650 714])
+            ("chars" variable nil nil [716 726])
+            ("cap" variable nil nil [727 752])
+            ("disable_stdout_buffering" function nil nil [754 962])
+            ("if" code nil nil [963 1172])
+            ("if" code nil nil [1173 1294])
+            ("try" code nil nil [1295 2440]))          
+      :file "ASCIILive.py"
+      :pointmax 2440
+      :fsize 2520
+      :lastmodtime '(24466 54880 700830 310000)
+      :unmatched-syntax nil))
+  :file "!home!cayden!Documents!Code!Python!ASCIILive!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

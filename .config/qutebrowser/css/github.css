@@ -1,0 +1,261 @@
+/* ==UserStyle==
+@name         Sane GitHub
+@version      0.0.4
+@description  Attempts to revert as much as possible of the June 2020 GitHub UI update
+@namespace    MCHSL
+@author       MCHSL
+@homepageURL  https://github.com/MCHSL/sane-github/
+@updateURL    https://raw.githubusercontent.com/MCHSL/sane-github/master/sane-github.user.css
+@license      MIT
+@preprocessor uso
+==/UserStyle== */
+
+
+
+.IssueLabel {
+ border-radius: 0.25em;
+ padding: 0 3px;
+ font-weight: 600;
+ color: #000;
+}
+
+.pagehead {
+ margin-left: 20%;
+ margin-right: 20%;
+ margin-bottom: 16px !important;
+}
+
+.new-discussion-timeline {
+ margin-left: 20%;
+ margin-right: 20%;
+ padding: 0 !important;
+ color: #000;
+}
+
+.repository-content {
+ margin: 0;
+ color: #000;
+}
+
+.repository-content > div > div:first-child:not(.flex-md-items-center):not(.Box-header--blue) {
+ width: 100%;
+ 
+}
+
+.avatar-user {
+ border-radius: 0.1em !important;
+ color: #000;
+}
+
+.State {
+ border-radius: 0.25em;
+ padding: 3px 5px;
+}
+
+:not(get-repo-controller) > details > summary,
+button.btn {
+ border-top-right-radius: 0 !important;
+ border-bottom-right-radius: 0 !important;
+ border-top-left-radius: 0.25em !important;
+ border-bottom-left-radius: 0.25em !important;
+ box-shadow: 1px 2px 1px rgba(27,31,35,.06);
+}
+
+a.social-count {
+ border-top-right-radius: 0.25em !important;
+ border-bottom-right-radius: 0.25em !important;
+ border-top-left-radius: 0 !important;
+ border-bottom-left-radius: 0 !important;
+ box-shadow: 1px 2px 1px rgba(27,31,35,.06);
+}
+
+.d-md-block {
+ border-radius: 0.25em;
+}
+
+.TableObject-item {
+ vertical-align: unset;
+}
+
+.tabnav-tab {
+ padding: 5px 8px !important;
+ color: #fff;
+}
+
+.tabnav-tab.selected {
+ border-top-left-radius: 0.25em;
+ border-top-right-radius: 0.25em;
+}
+
+.Box-row {
+ border-bottom: 1px solid #e8e8e8;
+}
+
+.Box-header {
+ border-radius: 0.25em;
+ border-bottom: 1px solid #dbdbdb !important;
+}
+
+:not(#discussion_bucket):not(#wiki-content):not(.container-xl) > .gutter-condensed {
+ flex-direction: column-reverse !important;
+}
+
+.BorderGrid--spacious > * {
+ display: none;
+}
+
+.BorderGrid-row:first-child {
+ display: table-row !important;
+}
+
+.BorderGrid-row:last-child {
+ display: table-row !important;
+}
+
+.BorderGrid-cell > .mt-3:nth-child(6),
+.BorderGrid-cell > .mt-3:nth-child(7) {
+ display: inline !important;
+}
+
+.BorderGrid-cell > .mt-3:nth-child(8),
+.BorderGrid-cell > .mt-3:nth-child(9) {
+ display: inline-block !important;
+ margin-left: 8px;
+}
+
+.gutter-condensed > div:not(.mb-md-0) {
+ width: 100% !important;
+}
+
+.BorderGrid-cell > ul {
+ width: 100%;
+ display: flex;
+ align-items: stretch;
+ justify-content: center;
+ flex-direction: row;
+}
+
+.BorderGrid-cell > ul > li {
+ flex: auto;
+}
+
+.d-md-flex {
+ border-radius: 0.25em;
+}
+
+summary.ml-2 {
+ border-radius: 0.25em;
+}
+
+summary.btn.css-truncate {
+ border-radius: 0.25em !important;
+ box-shadow: 1px 2px 1px rgba(27,31,35,.06);
+}
+
+.Box-header--#87d1f9 {
+ border-color: #87d1f9;
+ color: #87d1f9;
+ padding: 12px 16px;
+}
+
+.btn {
+ box-shadow: 1px 2px 1px rgba(27,31,35,.06);
+}
+
+#readme {
+ border-radius: 0.3em !important;
+}
+
+#js-issues-toolbar {
+ border-top-right-radius: 0.25em;
+ border-top-left-radius: 0.25em;
+ padding: 8px 16px;
+}
+
+#js-issues-search {
+ box-shadow: 1px 2px 1px rgba(27,31,35,.06);
+}
+
+.subnav-item:first-child {
+ border-top-left-radius: 0.25em;
+ border-bottom-left-radius: 0.25em;
+}
+
+.subnav-item:last-child {
+ border-top-right-radius: 0.25em;
+ border-bottom-right-radius: 0.25em;
+}
+
+.btn.btn-primary {
+ border-radius: 0.15em;
+ box-shadow: 1px 2px 1px rgba(27,31,35,.06);
+ color: #fff;
+}
+
+.btn.disabled {
+ border-top-left-radius: 0.25em;
+ border-bottom-left-radius: 0.25em;
+ box-shadow: 1px 2px 1px rgba(27,31,35,.06);
+ color: #484848;
+}
+
+input[aria-label="Select all issues"] {
+ vertical-align: middle;
+}
+
+#files {
+ margin-left: -15%;
+ width: 90%;
+}
+
+.thread-subscription-status,
+#all_commit_comments,
+.commit.full-commit {
+ width: 60%;
+}
+
+.Label.Label--gray {
+ border-color: #d9d9d9;
+ border-radius: 0.25em;
+}
+
+.Box-row--gray,
+.Box-row.border-top.border-black-fade {
+ padding: 6px 8px !important;
+ border-radius: 0.25em;
+}
+
+.Box-body.flex-items-center {
+ padding: 6px 8px;
+ border-radius: 0.25em;
+ width: 100%
+}
+
+#partial-discussion-sidebar {
+ width: 22.5%;
+}
+
+#discussion_bucket.pull-request-tab-content {
+ width: 79.45%;
+}
+
+.UnderlineNav-item {
+    visibility: visible !important;
+}
+
+.position-absolute.js-responsive-underlinenav-overflow {
+ display: none;
+}
+
+nav.js-sidenav-container-pjax.js-responsive-underlinenav {
+ display: flex;
+ align-items: stretch;
+}
+
+ul.UnderlineNav-body.list-style-none {
+ flex: auto;
+}
+
+ul.UnderlineNav-body.list-style-none > li {
+ flex: auto;
+}

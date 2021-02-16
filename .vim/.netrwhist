@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/cayden/.vpython-root'
+let g:netrw_dirhist_4='/mnt/gentoo/etc/X11/xinit/xinitrc.d'
+let g:netrw_dirhist_3='/mnt/gentoo/etc/X11/xinit'
+let g:netrw_dirhist_2='/usr/lib/qt/qml/QMLTermWidget/color-schemes'
+let g:netrw_dirhist_1='/var/log/lightdm'
+let g:netrw_dirhist_0='/home/cayden/.emacs.d'
+let g:netrw_dirhist_9='/home/cayden/.config/vivaldi/Default'
+let g:netrw_dirhist_8='/home/cayden/Documents/lisp/helloworld.lisp'
+let g:netrw_dirhist_7='/home/cayden/Documents/School/English'
+let g:netrw_dirhist_6='/home/cayden/.config/fish/functions'
