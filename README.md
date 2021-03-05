@@ -13,11 +13,10 @@ Icon theme is [Tela](https://github.com/vinceliuice/Tela-icon-theme)
 ```
 OS: Gentoo
 Shell: Fish
-Monospace font: Source Code Pro
-Regular font: Ubuntu
+Font: Source Code Pro
 Terminal: Kitty
 Icons: Tela
-File manager: nautilus
+File manager: pcmanfm
 Window manager: dwm
 Web browser: qutebrowser
 Application launcher: rofi

@@ -30,7 +30,7 @@
 	spacing: 0;
 	background-color: @base00;
 
-	font: "Ubuntu Regular 10";
+	font: "Source Code Pro 10";
 }
 
 window {

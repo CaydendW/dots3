@@ -7,9 +7,19 @@
 config_version: 2
 settings:
   content.notifications:
+    https://calendar.google.com: false
+    https://web.telegram.org: true
+    https://www.academicdestressor.com: false
     https://www.reddit.com: false
+    https://www.youtube.com: false
+  content.register_protocol_handler:
+    https://calendar.google.com?cid=%25s: false
   fonts.default_family:
     global: null
+  fonts.prompts:
+    global: Source Code Pro
+  fonts.tabs.selected:
+    global: default_size default_family
   fonts.web.family.fixed:
     global: Source Code Pro
   fonts.web.family.sans_serif:
