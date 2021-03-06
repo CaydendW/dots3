@@ -8,7 +8,7 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 
 " set spell
-syntax enable
+silent! syntax enable
 
 set termguicolors
 " colorscheme purp

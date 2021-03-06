@@ -8,10 +8,12 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 
 " set spell
-syntax enable
+silent! syntax enable
+
+set background=dark
 
 " colorscheme purp
-silent! colo sweet_dark
+" silent! colo sweet_dark
 silent! colo ThemerVim
 
 set number
