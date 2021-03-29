@@ -6,8 +6,8 @@
 ## Notes
 This is not my color scheme. It was created by [EliverLara](https://github.com/EliverLara/).  
 The Github repo cand be found [here](https://github.com/EliverLara/Sweet).  
-That being said, I did write the majority of the colors here. The only work that is not mine is the VSCode (Found under .vscode/extensions/eliverlara.sweet-vscode-1.1.1) and the GTK theme (Found under the Sweet-Dark.tar.xz).  
 Icon theme is [Tela](https://github.com/vinceliuice/Tela-icon-theme)
+A themer.dev page for the scheme can be found [here](https://themer.dev/?colors.dark.shade0=%23161925&colors.dark.shade7=%23dcdfe4&colors.dark.accent0=%23ED254E&colors.dark.accent1=%23ED254E&colors.dark.accent2=%23F9DC5C&colors.dark.accent3=%2371F79F&colors.dark.accent4=%237CB7FF&colors.dark.accent5=%2300c1e4&colors.dark.accent6=%23ED254E&colors.dark.accent7=%237c4ded&calculateIntermediaryShades.dark=true) for anyone who wants the scheme on other applications
 
 ## Info
 ```
