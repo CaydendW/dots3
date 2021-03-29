@@ -1,99 +1,106 @@
+" Only Vim
 if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
-filetype plugin indent on
+" Keybinds
+map <C-p> :Files<CR>
+map <C-_> <plug>NERDCommenterToggle
+nmap <silent> cd :call CocAction('jumpDefinition', 'tabe')<CR>
+map c y
+map cl :noh<Enter>
+nnoremap ; :
+vnoremap ; :
 
-" If there are uninstalled bundles found on startup,
-
-" set spell
-silent! syntax enable
-
+" Theming
 set termguicolors
-" colorscheme purp
+silent! syntax enable
+set background=dark
 silent! colo ThemerVim
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
 
+" General config stuff
+filetype plugin on
 set number
 set hlsearch
 set ignorecase
 set smartcase
-
-" Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
-
-" When opening a new line and no filetype-specific indenting is enabled, keep
-" the same indent as the line you're currently on. Useful for READMEs, etc.
 set autoindent
-
-" Stop certain movements from always going to the first character of a line.
-" While this behaviour deviates from that of Vi, it does what most users
-" coming from other editors would expect.
 set nostartofline
-
-" Display the cursor position on the last line of the screen or in the status
-" line of a window
 set ruler
-
-" Always display the status line, even if only one window is displayed
 set laststatus=1
-
-" Instead of failing a command because of unsaved changes, instead raise a
-" dialogue asking if you wish to save changed files.
 set confirm
-
-" Use visual bell instead of beeping when doing something wrong
 set visualbell
-
-" And reset the terminal code for the visual bell. If visualbell is set, and
-" this line is also included, vim will neither flash nor beep. If visualbell
-" is unset, this does nothing.
 set t_vb=
-
-" Set the command window height to 2 lines, to avoid many cases of having to
-" "press <Enter> to continue"
 set cmdheight=2
-
-" Display line numbers on the left
 set number
-
-" Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
+set mouse=a
+set updatetime=300
 
-" Use <F11> to toggle between 'paste' and 'nopaste'
-set pastetoggle=<F11>
-
-
-"------------------------------------------------------------
-" Indentation options {{{1
-"
-" Indentation settings according to personal preference.
-
-" Indentation settings for using 4 spaces instead of tabs.
-" Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=4
-set softtabstop=4
+" Tabs
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
-" Indentation settings for using hard tabs for indent. Display tabs as
-" four characters wide.
-"set shiftwidth=4
-"set tabstop=4
+" Vim terminal
+let g:terminal_ansi_colors = [
+  \ "#161925", "#ED254E", "#71F79F", "#F9DC5C",
+  \ "#00c1e4", "#7c4ded", "#7CB7FF", "#dcdfe4",
+  \ "#161925", "#ED254E", "#71F79F", "#F9DC5C",
+  \ "#00c1e4", "#7c4ded", "#7CB7FF", "#dcdfe4"
+  \]
 
+" Plug stuff
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'preservim/nerdcommenter'
+Plug 'luochen1990/rainbow'
+call plug#end()
 
-"------------------------------------------------------------
-" Mappings {{{1
-"
-" Useful mappings
+" Autostart
+autocmd CursorHold * silent call CocActionAsync('highlight')
+autocmd VimEnter * NERDTree 
+autocmd VimEnter * wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
-" which is the default
-map Y y$
+" coc color
+hi Pmenu guifg=#dcdfe4
+hi PmenuSel guibg=#00c1e4 guifg=#dcdfe4
 
-" Map <C-L> (redraw screen) to also turn off search highlighting until the
-" next search
-nnoremap <C-L> :nohl<CR><C-L>
+" rainbow brackets
+let g:rainbow_active = 1
+let g:rainbow_conf = {
+\	'guifgs': ['#7c4ded', '#7CB7FF', '#71F79F', '#00c1e4'],
+\}
 
+" Gitgutter
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = 'M'
+let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_removed_first_line = '-'
+let g:gitgutter_sign_modified_removed = '-'
 
+" Nerdtree
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+    \ "Modified"  : "M",
+    \ "Staged"    : "+",
+    \ "Untracked" : "N",
+    \ "Renamed"   : ">",
+    \ "Unmerged"  : "=",
+    \ "Deleted"   : "X",
+    \ "Dirty"     : "M",
+    \ "Clean"     : "C",
+    \ 'Ignored'   : 'I',
+    \ "Unknown"   : "?"
+    \ }
+let NERDTreeShowHidden=1
+
+" Nerdcomment
+let g:NERDSpaceDelims = 1
+let g:NERDCreateDefaultMappings = 0

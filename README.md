@@ -20,6 +20,6 @@ File manager: pcmanfm
 Window manager: dwm
 Web browser: qutebrowser
 Application launcher: rofi
-Editors: vim, Doom Emcas and VSCode
+Editors: Vim
 Compositor: Stock picom
 ```
