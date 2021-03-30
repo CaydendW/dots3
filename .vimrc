@@ -60,7 +60,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-surround'
 Plug 'luochen1990/rainbow'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Autostart
